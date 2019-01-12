@@ -1,0 +1,3 @@
+guard :shell do
+  watch(/(.*).rb/) {|m| `~/.ghq/github.com/kmyk/online-judge-tools/oj t -1 -i -c "ruby #{m[0]}"` }
+end
